@@ -1,0 +1,43 @@
+<div class="jumbotron clearfix" data-ng-controller="MessagesController" data-ng-init="find()">
+  <h1>fullstackchat</h1>
+  <div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">demo</h4>
+      </div>
+      <div class="modal-body">
+        <h5 class="modal-title">chatwindow</h5><br>
+        <div class="alert alert-dismissable alert-success" data-ng-repeat="message in messages">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong><h6>{{message.content}}</h6></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <form data-ng-submit="createMessage()">
+          <label for="inputEmail" class="col-lg-2 control-label">Message:</label>
+          <input type="text" data-ng-model="content" class="form-control" placeholder="What do you want to say?">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- for chat rooms -->
+<!-- <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+  <li class=""><a href="#home" data-toggle="tab">Home</a></li>
+  <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+  <li class="disabled"><a>Disabled</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+      <li class="divider"></li>
+      <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+    </ul>
+  </li>
+</ul> -->
