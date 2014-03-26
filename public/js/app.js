@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fullstackchat', ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.router', 'fullstackchat.controllers', 'fullstackchat.services']);
+angular.module('fullstackchat', ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.router', 'ui.route', 'fullstackchat.controllers', 'fullstackchat.services']);
 
 
 angular.module('fullstackchat.controllers', [
